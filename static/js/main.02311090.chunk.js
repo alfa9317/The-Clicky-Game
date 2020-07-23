@@ -1,2 +1,0 @@
-(this["webpackJsonpthe-clicky-game"]=this["webpackJsonpthe-clicky-game"]||[]).push([[0],{12:function(e,n,t){},17:function(e,n,t){"use strict";t.r(n);var r=t(0),a=t.n(r),c=t(3),o=t.n(c),i=(t(12),t(31));var l=function(){return a.a.createElement(i.a,{variant:"contained",color:"primary"},"Hello World")};o.a.render(a.a.createElement(l,null),document.getElementById("root"))},7:function(e,n,t){e.exports=t(17)}},[[7,1,2]]]);
-//# sourceMappingURL=main.02311090.chunk.js.map

@@ -1,0 +1,2 @@
+(this["webpackJsonpthe-clicky-game"]=this["webpackJsonpthe-clicky-game"]||[]).push([[0],{13:function(e,n,t){e.exports=t(23)},18:function(e,n,t){},23:function(e,n,t){"use strict";t.r(n);var a=t(1),c=t.n(a),l=t(10),r=t.n(l),u=(t(18),t(39)),i=t(38);function m(e){return c.a.createElement(u.a,null,c.a.createElement(i.a,null,"The Clicky Game"))}var o=function(){return c.a.createElement("div",null,c.a.createElement(m,null),"The Clicky Game")};r.a.render(c.a.createElement(o,null),document.getElementById("root"))}},[[13,1,2]]]);
+//# sourceMappingURL=main.07c16bd6.chunk.js.map
