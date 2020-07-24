@@ -1,19 +1,19 @@
 import { createMuiTheme } from '@material-ui/core/styles';
 
-const jBlue = '#3282b8';
-const jDarkBlue = '#0f4c75';
+const black = '#000000';
+const blue = '#0f4c75';
 
 export default createMuiTheme({
     palette: {
         common: {
-            blue: `${jBlue}`,
-            darkBlue: `${jDarkBlue}`
+            black: `${black}`,
+            blue: `${blue}`
         },
         primary: {
-            main: `${jBlue}`
+            main: `${black}`
         },
         secondary: {
-            main: `${jDarkBlue}`
+            main: `${blue}`
         }
     },
     typography: {

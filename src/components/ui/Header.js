@@ -4,6 +4,8 @@ import Toolbar from '@material-ui/core/Toolbar';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import {makeStyles} from '@material-ui/styles';
 
+import logo from '../../assets/logoCG.png'
+
 function ElevationScroll(props) {
     const { children } = props;
 
@@ -20,7 +22,11 @@ function ElevationScroll(props) {
 const useStyles = makeStyles(theme => ({
     toolbarMargin: {
          ...theme.mixins.toolbar
-    } 
+    },
+    logo: {
+        height: '80px',
+        margin: '10px 10px 10px 30px'
+        } 
 }))
 
 export default function Header(props) {
@@ -32,7 +38,7 @@ export default function Header(props) {
             <ElevationScroll>
                 <Appbar position='fixed'>
                     <Toolbar>
-                        The Clicky Game
+                        <img alt='logo' src={logo} className={classes.logo}/>
                     </Toolbar>
                 </Appbar>
             </ElevationScroll>
