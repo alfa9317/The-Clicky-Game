@@ -1,13 +1,15 @@
 import React from 'react';
+import { ThemeProvider } from '@material-ui/core/styles';
 import './App.css';
+import theme from './components/ui/Theme';
 import Header from './components/ui/Header'
 
 function App() {
   return (
-    <div>
+    <ThemeProvider theme={theme}>
       <Header />
       The Clicky Game
-    </div>
+    </ThemeProvider>
   );
 }
 
