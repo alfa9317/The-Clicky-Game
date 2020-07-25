@@ -1,14 +1,21 @@
 import React from 'react';
 import { ThemeProvider } from '@material-ui/core/styles';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import './App.css';
 import theme from './components/ui/Theme';
-import Header from './components/ui/Header'
+import Header from './components/ui/Header';
+import Home from './pages/Home';
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <Header />
-      The Clicky Game
+      <BrowserRouter>
+        <Header />
+        <Switch>
+          <Route exact path='/' component={Home} />
+          <Route exact path='/about' component={Home} />
+        </Switch>
+    </BrowserRouter>
     </ThemeProvider>
   );
 }
