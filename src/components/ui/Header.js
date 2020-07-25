@@ -4,7 +4,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import {makeStyles} from '@material-ui/styles';
 
-import logo from '../../assets/logoCG.png'
+import logo from '../../assets/logo2CG.png'
 
 function ElevationScroll(props) {
     const { children } = props;
@@ -24,8 +24,8 @@ const useStyles = makeStyles(theme => ({
          ...theme.mixins.toolbar
     },
     logo: {
-        height: '80px',
-        margin: '10px 10px 10px 30px'
+        height: '90px',
+        margin: '2px 10px 2px 30px'
         } 
 }))
 
