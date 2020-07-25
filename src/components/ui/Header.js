@@ -50,7 +50,7 @@ const useStyles = makeStyles(theme => ({
         '&:hover': {
             backgroundColor: 'transparent'
         },
-        margin: '3px 10px 3px 150px',
+        margin: '3px 10px 3px 50px',
         [theme.breakpoints.down('sm')]: {
             margin: '3px 0px 3px 0px',
             position: 'absolute',
