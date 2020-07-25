@@ -6,7 +6,7 @@ export default function Home(props){
         
         <div>
              <h1>
-                 Home Page {window.location.pathname}
+                 Home Page 
              </h1>
             
         </div>

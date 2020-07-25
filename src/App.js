@@ -7,7 +7,8 @@ import Header from './components/ui/Header';
 import Home from './pages/Home';
 import About from './pages/About';
 
-function App() {
+
+function App (props){
   return (
     <ThemeProvider theme={theme}>
         <Header />

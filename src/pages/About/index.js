@@ -6,7 +6,7 @@ export default function About(props){
         
         <div>
              <h1>
-                 About Page {window.location.pathname}
+                 About Page
              </h1>
             
         </div>
