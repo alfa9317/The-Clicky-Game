@@ -51,7 +51,7 @@ const useStyles = makeStyles(theme => ({
             backgroundColor: 'transparent'
         },
         margin: '3px 10px 3px 150px',
-        [theme.breakpoints.down('md')]: {
+        [theme.breakpoints.down('sm')]: {
             margin: '3px 0px 3px 0px',
             position: 'absolute',
             left: '50%',
@@ -81,18 +81,15 @@ const useStyles = makeStyles(theme => ({
         }
     },
     drawerIcon: {
+        color: 'orange',
         height:'50px',
         width:'50px'
     },
     drawerIconContainer: {
-        marginLeft: 'auto',
-        backgroundColor: theme.palette.common.blue,
-        '&:hover':{
-            backgroundColor: 'transparent'
-        }
+        marginLeft: 'auto'
     },
     drawer: {
-        backgroundColor: theme.palette.common.blue,
+        backgroundColor: theme.palette.common.black,
         width: '40vw'
     },
     drawerItem: {
@@ -101,7 +98,7 @@ const useStyles = makeStyles(theme => ({
         opacity: 0.7
     },
     drawerItemEstimate: {
-        backgroundColor: theme.palette.common.darkBlue
+        backgroundColor: theme.palette.common.black
     },
     drawerItemSelected: {
         '& .MuiListItemText-root': {
