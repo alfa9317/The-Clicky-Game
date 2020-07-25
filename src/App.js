@@ -13,7 +13,7 @@ function App (props){
     <ThemeProvider theme={theme}>
         <Header />
           <Route exact path='/' component={Home} />
-          <Route path='/about' component={About} />
+          <Route  path='/about' component={About} />
     </ThemeProvider>
   );
 }

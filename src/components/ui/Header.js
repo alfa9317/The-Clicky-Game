@@ -125,14 +125,14 @@ export default function Header(props) {
         setValue(newValue)
     }
 
-    const routes = [{name: 'Home', link: '#/',activeIndex: 0},
-    {name: 'About The Game', link: '#/about',activeIndex: 1}]
+    const routes = [{name: 'Home', link: '/',activeIndex: 0},
+    {name: 'About The Game', link: '/about',activeIndex: 1}]
 
     useEffect(() => {
 
         routes.forEach(route => {
             switch (window.location.hash) {
-                case `${route.link}`:
+                case `#${route.link}`:
                     if(value !== route.activeIndex) {
                         setValue(route.activeIndex)
                     }
