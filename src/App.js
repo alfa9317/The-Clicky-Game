@@ -12,8 +12,8 @@ function App() {
       <BrowserRouter>
         <Header />
         <Switch>
-          <Route path={process.env.PUBLIC_URL + '/'} component={Home} />
-          <Route path={process.env.PUBLIC_URL + '/about'} component={Home} />
+          <Route exact path={process.env.PUBLIC_URL + '/'} component={Home} />
+          <Route exact path={process.env.PUBLIC_URL + '/aboutgame'} component={Home} />
         </Switch>
     </BrowserRouter>
     </ThemeProvider>
