@@ -116,7 +116,7 @@ export default function Header(props) {
     const classes = useStyles()
     const theme = useTheme();
     const iOS = process.browser && /iPad|iPhone|iPod/.test(navigator.userAgent);
-    const matches = useMediaQuery(theme.breakpoints.down('md'));
+    const matches = useMediaQuery(theme.breakpoints.down('sm'));
 
     const [openDrawer, setOpenDrawer] = useState(false);
     const [value,setValue] = useState(0);
@@ -127,6 +127,22 @@ export default function Header(props) {
 
     const routes = [{name: 'Home', link: '#/',activeIndex: 0},
     {name: 'About The Game', link: '#/about',activeIndex: 1}]
+
+    useEffect(() => {
+
+        routes.forEach(route => {
+            switch (window.location.hash) {
+                case `${route.link}`:
+                    if(value !== route.activeIndex) {
+                        setValue(route.activeIndex)
+                    }
+                    break;
+                default:
+                    break;
+            }
+        })
+
+    }, [value, routes])
 
     const tabs = (
         <React.Fragment>
