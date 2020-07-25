@@ -21,11 +21,17 @@ function ElevationScroll(props) {
 
 const useStyles = makeStyles(theme => ({
     toolbarMargin: {
-         ...theme.mixins.toolbar
+         ...theme.mixins.toolbar,
+         marginBottom: '35px',
     },
     logo: {
         height: '90px',
-        margin: '2px 10px 2px 30px'
+        [theme.breakpoints.down('sm')]: {
+            margin: 'auto',
+            textAlign: 'center',
+            maxWidth: '100%',
+            maxHeight: '70%'
+        }
         } 
 }))
 
@@ -37,7 +43,7 @@ export default function Header(props) {
         <React.Fragment>
             <ElevationScroll>
                 <Appbar position='fixed'>
-                    <Toolbar>
+                    <Toolbar disableGutters>
                         <img alt='logo' src={logo} className={classes.logo}/>
                     </Toolbar>
                 </Appbar>
