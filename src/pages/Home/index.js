@@ -6,7 +6,7 @@ export default function Home(props){
         
         <div>
              <h1>
-                 Hola Mundo
+                 {window.location.pathname}
              </h1>
             
         </div>

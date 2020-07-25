@@ -12,8 +12,8 @@ function App() {
       <BrowserRouter>
         <Header />
         <Switch>
-          <Route exact path='/' component={Home} />
-          <Route exact path='/about' component={Home} />
+          <Route path={process.env.PUBLIC_URL + '/'} component={Home} />
+          <Route path={process.env.PUBLIC_URL + '/about'} component={Home} />
         </Switch>
     </BrowserRouter>
     </ThemeProvider>
