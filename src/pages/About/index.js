@@ -1,12 +1,12 @@
 import React from "react";
 
-export default function Home(props){
+export default function About(props){
 
     return (
         
         <div>
              <h1>
-                 Home Page
+                 About Page
              </h1>
             
         </div>

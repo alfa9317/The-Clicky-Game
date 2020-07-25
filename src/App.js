@@ -1,21 +1,18 @@
 import React from 'react';
 import { ThemeProvider } from '@material-ui/core/styles';
-import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import {Route} from 'react-router-dom';
 import './App.css';
 import theme from './components/ui/Theme';
 import Header from './components/ui/Header';
 import Home from './pages/Home';
+import About from './pages/About';
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <BrowserRouter>
         <Header />
-        <Switch>
-          <Route exact path={process.env.PUBLIC_URL + '/'} component={Home} />
-          <Route exact path={process.env.PUBLIC_URL + '/aboutgame'} component={Home} />
-        </Switch>
-    </BrowserRouter>
+          <Route exact path='/' component={Home} />
+          <Route path='/about' component={About} />
     </ThemeProvider>
   );
 }
