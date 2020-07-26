@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "933499340b424e07095dbe1faa0c15e2",
+    "revision": "ae89c1504b2414dc6ccb597ea4b87e94",
     "url": "/the-clicky-game/index.html"
   },
   {
-    "revision": "18bb8f058873d200eb38",
+    "revision": "a671bcb5ca58dd1516f1",
     "url": "/the-clicky-game/static/css/main.050523cc.chunk.css"
   },
   {
-    "revision": "70168d957f1dd3b36ef4",
-    "url": "/the-clicky-game/static/js/2.85f58312.chunk.js"
+    "revision": "0433867b592805a4146b",
+    "url": "/the-clicky-game/static/js/2.ab123b43.chunk.js"
   },
   {
     "revision": "0749163b59fbee32225059cb60c18af6",
-    "url": "/the-clicky-game/static/js/2.85f58312.chunk.js.LICENSE.txt"
+    "url": "/the-clicky-game/static/js/2.ab123b43.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "18bb8f058873d200eb38",
-    "url": "/the-clicky-game/static/js/main.92561f47.chunk.js"
+    "revision": "a671bcb5ca58dd1516f1",
+    "url": "/the-clicky-game/static/js/main.9c11f948.chunk.js"
   },
   {
     "revision": "e229e8c2661370be5a7c",
@@ -26,5 +26,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "401501caa4deeb24c01845fcc25a337b",
     "url": "/the-clicky-game/static/media/logo2CG.401501ca.png"
+  },
+  {
+    "revision": "07a380007d99db6218e8e26f5682ef48",
+    "url": "/the-clicky-game/static/media/rick-and-morty-logo.07a38000.png"
   }
 ]);
