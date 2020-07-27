@@ -1,24 +1,24 @@
 {
   "files": {
     "main.css": "/the-clicky-game/static/css/main.050523cc.chunk.css",
-    "main.js": "/the-clicky-game/static/js/main.1c96da17.chunk.js",
-    "main.js.map": "/the-clicky-game/static/js/main.1c96da17.chunk.js.map",
+    "main.js": "/the-clicky-game/static/js/main.093ec446.chunk.js",
+    "main.js.map": "/the-clicky-game/static/js/main.093ec446.chunk.js.map",
     "runtime-main.js": "/the-clicky-game/static/js/runtime-main.3736af4a.js",
     "runtime-main.js.map": "/the-clicky-game/static/js/runtime-main.3736af4a.js.map",
-    "static/js/2.61c8a42d.chunk.js": "/the-clicky-game/static/js/2.61c8a42d.chunk.js",
-    "static/js/2.61c8a42d.chunk.js.map": "/the-clicky-game/static/js/2.61c8a42d.chunk.js.map",
+    "static/js/2.64ead5b1.chunk.js": "/the-clicky-game/static/js/2.64ead5b1.chunk.js",
+    "static/js/2.64ead5b1.chunk.js.map": "/the-clicky-game/static/js/2.64ead5b1.chunk.js.map",
     "index.html": "/the-clicky-game/index.html",
-    "precache-manifest.089262d3f14fa06319241d6600e6575f.js": "/the-clicky-game/precache-manifest.089262d3f14fa06319241d6600e6575f.js",
+    "precache-manifest.676441302d505274017a985cca58889e.js": "/the-clicky-game/precache-manifest.676441302d505274017a985cca58889e.js",
     "service-worker.js": "/the-clicky-game/service-worker.js",
     "static/css/main.050523cc.chunk.css.map": "/the-clicky-game/static/css/main.050523cc.chunk.css.map",
-    "static/js/2.61c8a42d.chunk.js.LICENSE.txt": "/the-clicky-game/static/js/2.61c8a42d.chunk.js.LICENSE.txt",
+    "static/js/2.64ead5b1.chunk.js.LICENSE.txt": "/the-clicky-game/static/js/2.64ead5b1.chunk.js.LICENSE.txt",
     "static/media/logo2CG.png": "/the-clicky-game/static/media/logo2CG.401501ca.png",
     "static/media/rick-and-morty-logo.png": "/the-clicky-game/static/media/rick-and-morty-logo.07a38000.png"
   },
   "entrypoints": [
     "static/js/runtime-main.3736af4a.js",
-    "static/js/2.61c8a42d.chunk.js",
+    "static/js/2.64ead5b1.chunk.js",
     "static/css/main.050523cc.chunk.css",
-    "static/js/main.1c96da17.chunk.js"
+    "static/js/main.093ec446.chunk.js"
   ]
 }
