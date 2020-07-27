@@ -3,8 +3,10 @@ import {makeStyles} from '@material-ui/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import Tada from 'react-reveal/Tada';
+import Character from '../../components/game/Character';
 
 import logo from "../../assets/rick-and-morty-logo.png"
+import characters from "../../characters.json"
 
 const useStyles = makeStyles(theme => ({
     logo: {
@@ -23,9 +25,8 @@ const useStyles = makeStyles(theme => ({
     gameContainer:{
         margin: '10%',
         padding: '20%',
-        paddingTop: '0px',
         marginTop: '0%',
-        background: theme.palette.common.black,
+        background: theme.palette.common.blue,
         height: '70%',
         display: 'flex',
         flexFlow: 'row wrap',
@@ -47,7 +48,13 @@ export default function Home(props){
                 <img alt="rick and morty logo" src={logo} className={classes.logo}/>
             </Tada>
             <div className={classes.gameContainer}>
-
+                {characters.map(character => (
+                    <Character 
+                    name={character.name}
+                    image={character.image}
+                    /> 
+                ))}
+                {console.log(characters)}
             </div>    
         </div>
         

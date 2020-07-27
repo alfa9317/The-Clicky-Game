@@ -1,0 +1,62 @@
+[
+    {
+      "id": 1,
+      "name": "Rick Sanchez",
+      "image":"gameImages/rick.png"
+    },
+    {
+      "id": 2,
+      "name": "Beth Smith",
+      "image": "gameImages/beth.png"
+    },
+    {
+      "id": 3,
+      "name": "Bird Person",
+      "image": "gameImages/bird-person.png"
+    },
+    {
+      "id": 4,
+      "name": "Doofus Rick",
+      "image": "gameImages/doofus-rick.png"
+    },
+    {
+      "id": 5,
+      "name": "Goldenfold",
+      "image": "gameImages/goldenfold.png"
+    },
+    {
+      "id": 6,
+      "name": "Jerry Smith",
+      "image": "gameImages/jerry.png"
+    },
+    {
+      "id": 7,
+      "name": "Jessica",
+      "image": "gameImages/jessica.png"
+    },
+    {
+      "id": 8,
+      "name": "Mr. Meeseek",
+      "image": "gameImages/meeseeks.png"
+    },
+    {
+      "id": 9,
+      "name": "Morty Smith",
+      "image": "gameImages/morty.png"
+    },
+    {
+      "id": 10,
+      "name": "Mr. Poopybutthole",
+      "image": "gameImages/mr-poopybutthole.png"
+    },
+    {
+      "id": 11,
+      "name": "Squanchy",
+      "image": "gameImages/squanchy.png"
+    },
+    {
+      "id": 12,
+      "name": "Summer Smith",
+      "image": "gameImages/summer.png"
+    }
+  ]
