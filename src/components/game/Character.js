@@ -34,7 +34,7 @@ export default function Character(props){
     return (
         <div className={classes.container}>
             <Paper elevation={3} >
-                <img alt={props.name} src={`${process.env.PUBLIC_URL}/${props.image}`} className={classes.image}/>
+                <img alt={props.name} src={`${process.env.PUBLIC_URL}/${props.image}`} className={classes.image} onClick={() => props.handleClick(props.id)}/>
             </Paper>
         </div>
     )

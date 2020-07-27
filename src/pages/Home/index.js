@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import {makeStyles} from '@material-ui/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
@@ -7,6 +7,13 @@ import Character from '../../components/game/Character';
 
 import logo from "../../assets/rick-and-morty-logo.png"
 import characters from "../../characters.json"
+
+function shuffle(array) {
+
+    array.sort(function (a, b) { return 0.5 - Math.random() })
+    return array;
+
+  }
 
 const useStyles = makeStyles(theme => ({
     logo: {
@@ -37,26 +44,53 @@ const useStyles = makeStyles(theme => ({
     }
 }))
 
-export default function Home(props){
-
+export default function Home(){
+      
     const classes = useStyles()
+
+    const [openDrawer, setOpenDrawer] = useState(false);
+    const [value,setValue] = useState(0);
+    const [message, setMessage] = useState("Click an image to begin!!");
+    const [score, setScore] = useState(0);
+    const [highScore, setHighScore] = useState(0);
+    const [flag, setFlag] = useState(0);
+    const [inCharacters, setInCharacters] = useState(characters);
+    const [charactersList, setCharactersList] = useState(characters);
+    
+
+    const handleClick = id => {
+        setCharactersList(shuffle(charactersList));
+        setScore(score+1);
+        console.log(id);
+    }
+
+    useEffect(() => {
+        
+        console.log(`Eso ${charactersList}`);
+
+    })
+    
+
 
     return (
         
-        <div>
+        <React.Fragment>
             <Tada>
                 <img alt="rick and morty logo" src={logo} className={classes.logo}/>
             </Tada>
             <div className={classes.gameContainer}>
-                {characters.map(character => (
-                    <Character 
+                {score}
+                {charactersList.map(character => (
+                    <Character
+                    handleClick={handleClick}
+                    id={character.id}
+                    key={character.id}  
                     name={character.name}
                     image={character.image}
                     /> 
                 ))}
-                {console.log(characters)}
             </div>    
-        </div>
+        </React.Fragment>
         
       );
 }
