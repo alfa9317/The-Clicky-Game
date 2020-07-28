@@ -27,7 +27,10 @@ const useStyles = makeStyles(theme => ({
                 margin: '5px',
                 width: theme.spacing(10),
                 height: theme.spacing(10)
-              }
+              },
+              '&:hover':{
+                transform: 'scale(0)'
+            }
         }
       },
       image:{

@@ -33,7 +33,7 @@ const useStyles = makeStyles(theme => ({
         margin: '10%',
         padding: '2%',
         marginTop: '0%',
-        background: '#ebecf1',
+        background: 'white',
         height: '70%',
         display: 'flex',
         flexFlow: 'row wrap',
