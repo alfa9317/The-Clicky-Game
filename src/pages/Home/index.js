@@ -3,6 +3,7 @@ import {makeStyles} from '@material-ui/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import Tada from 'react-reveal/Tada';
+import Jello from 'react-reveal/Jello';
 import Character from '../../components/game/Character';
 
 import logo from "../../assets/rick-and-morty-logo.png"
@@ -131,39 +132,41 @@ export default function Home(){
     return (
         
         <React.Fragment>
-            <Tada>
-                <img alt="rick and morty logo" src={logo} className={classes.logo}/>
-            </Tada>
-            <div className={classes.gameContainer}>
-                <Grid container justify='center' spacing={1}>
-                    <Grid item xs={12} sm={12} md={6} lg={7}className={classes.messageText}>
-                        {`${message}`}
-                    </Grid>
-                    <Grid container xs={12} sm={12} md={3} lg={2} className={classes.statusTextContainer}>
-                        <Grid item className={classes.score}>
-                            {`Score: ${score}`}
+            <Jello spy={flag}>
+                <Tada>
+                    <img alt="rick and morty logo" src={logo} className={classes.logo}/>
+                </Tada>
+                <div className={classes.gameContainer}>
+                    <Grid container justify='center' spacing={1}>
+                        <Grid item xs={12} sm={12} md={6} lg={7}className={classes.messageText}>
+                            {`${message}`}
+                        </Grid>
+                        <Grid container xs={12} sm={12} md={3} lg={2} className={classes.statusTextContainer}>
+                            <Grid item className={classes.score}>
+                                {`Score: ${score}`}
+                            </Grid>
+                            <Grid item>
+                                {`High score: ${highScore}`}
+                            </Grid>
                         </Grid>
                         <Grid item>
-                            {`High score: ${highScore}`}
+                            <Grid container direction='row' justify="center" alignItems="center"spacing={1}>
+                                {charactersList.map(character => (
+                                    <Grid item >
+                                        <Character
+                                        handleClick={handleClick}
+                                        id={character.id}
+                                        key={character.id}  
+                                        name={character.name}
+                                        image={character.image}
+                                        /> 
+                                    </Grid>
+                                ))}
+                            </Grid>
                         </Grid>
                     </Grid>
-                    <Grid item>
-                        <Grid container direction='row' justify="center" alignItems="center"spacing={1}>
-                            {charactersList.map(character => (
-                                <Grid item >
-                                    <Character
-                                    handleClick={handleClick}
-                                    id={character.id}
-                                    key={character.id}  
-                                    name={character.name}
-                                    image={character.image}
-                                    /> 
-                                </Grid>
-                            ))}
-                        </Grid>
-                    </Grid>
-                </Grid>
-            </div>    
+                </div>    
+            </Jello>
         </React.Fragment>
         
       );
