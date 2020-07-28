@@ -31,16 +31,19 @@ const useStyles = makeStyles(theme => ({
     },
     gameContainer:{
         margin: '10%',
-        padding: '20%',
+        padding: '2%',
         marginTop: '0%',
         background: '#ebecf1',
         height: '70%',
         display: 'flex',
         flexFlow: 'row wrap',
-        padding: '20px',
         justifyContent: 'space-around',
         alignContent: 'flex-start',
-        overflow: 'auto'
+        overflow: 'auto',
+        [theme.breakpoints.down('xs')]:{
+            margin: '2%',
+            padding: '2%'
+        }
     }
 }))
 
@@ -79,28 +82,26 @@ export default function Home(){
                 <img alt="rick and morty logo" src={logo} className={classes.logo}/>
             </Tada>
             <div className={classes.gameContainer}>
-            <Grid container justify='center' spacing={1}>
-
-                <Grid item >
-                    {`Score: ${score}`}
-                </Grid>
-                <Grid item>
-                    <Grid container direction='row' justify="center" alignItems="center"spacing={1}>
-                        {charactersList.map(character => (
-                            <Grid item >
-                                <Character
-                                handleClick={handleClick}
-                                id={character.id}
-                                key={character.id}  
-                                name={character.name}
-                                image={character.image}
-                                /> 
-                            </Grid>
-                        ))}
+                <Grid container justify='center' spacing={1}>
+                    <Grid item >
+                        {`Score: ${score}`}
+                    </Grid>
+                    <Grid item>
+                        <Grid container direction='row' justify="center" alignItems="center"spacing={1}>
+                            {charactersList.map(character => (
+                                <Grid item >
+                                    <Character
+                                    handleClick={handleClick}
+                                    id={character.id}
+                                    key={character.id}  
+                                    name={character.name}
+                                    image={character.image}
+                                    /> 
+                                </Grid>
+                            ))}
+                        </Grid>
                     </Grid>
                 </Grid>
-            </Grid>
-    
             </div>    
         </React.Fragment>
         

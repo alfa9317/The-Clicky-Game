@@ -18,8 +18,8 @@ const useStyles = makeStyles(theme => ({
         [theme.breakpoints.down('sm')]:{
             '& > *': {
                 margin: theme.spacing(1),
-                width: theme.spacing(10),
-                height: theme.spacing(10)
+                width: theme.spacing(12),
+                height: theme.spacing(12)
               }
         }
       },
