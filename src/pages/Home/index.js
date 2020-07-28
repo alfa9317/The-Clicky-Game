@@ -42,9 +42,38 @@ const useStyles = makeStyles(theme => ({
         overflow: 'auto',
         [theme.breakpoints.down('xs')]:{
             margin: '2%',
-            paddingTop: '10%',
+            paddingTop: '5%',
             paddingBottom: '10%'
         }
+    },
+    messageText:{
+        ...theme.typography.tab,
+        textAlign: 'center',
+        marginTop: '20px',
+        marginBottom: '20px',
+        fontSize: '1.3rem',
+        [theme.breakpoints.down('xs')]:{
+            textAlign: 'left',
+            marginTop: '0px',
+            marginBottom: '5px',
+            marginLeft: '25px'
+        }
+    },
+    statusTextContainer:{
+        ...theme.typography.tab,
+        fontSize: '1rem',
+        textAlign: 'center',
+        marginTop: '28px',
+        marginBottom: '20px',
+        [theme.breakpoints.down('xs')]:{
+            textAlign: 'left',
+            marginTop: '2px',
+            marginBottom: '20px',
+            marginLeft: '30px'
+        }
+    },
+    score:{
+        marginRight:'18px'
     }
 }))
 
@@ -52,8 +81,6 @@ export default function Home(){
       
     const classes = useStyles()
 
-    const [openDrawer, setOpenDrawer] = useState(false);
-    const [value,setValue] = useState(0);
     const [message, setMessage] = useState("Click an image to begin!!");
     const [score, setScore] = useState(0);
     const [highScore, setHighScore] = useState(0);
@@ -84,8 +111,16 @@ export default function Home(){
             </Tada>
             <div className={classes.gameContainer}>
                 <Grid container justify='center' spacing={1}>
-                    <Grid item >
-                        {`Score: ${score}`}
+                    <Grid item xs={12} sm={6} md={6} lg={7}className={classes.messageText}>
+                        {`${message}`}
+                    </Grid>
+                    <Grid container xs={12} sm={4} md={3} lg={2} className={classes.statusTextContainer}>
+                        <Grid item className={classes.score}>
+                            {`Score: ${score}`}
+                        </Grid>
+                        <Grid item>
+                            {`High score: ${highScore}`}
+                        </Grid>
                     </Grid>
                     <Grid item>
                         <Grid container direction='row' justify="center" alignItems="center"spacing={1}>
