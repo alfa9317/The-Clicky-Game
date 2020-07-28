@@ -42,7 +42,8 @@ const useStyles = makeStyles(theme => ({
         overflow: 'auto',
         [theme.breakpoints.down('xs')]:{
             margin: '2%',
-            padding: '2%'
+            paddingTop: '10%',
+            paddingBottom: '10%'
         }
     }
 }))
