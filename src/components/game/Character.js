@@ -33,7 +33,7 @@ export default function Character(props){
     const classes = useStyles()
     return (
         <div className={classes.container}>
-            <Paper elevation={3} >
+            <Paper elevation={7} >
                 <img alt={props.name} src={`${process.env.PUBLIC_URL}/${props.image}`} className={classes.image} onClick={() => props.handleClick(props.id)}/>
             </Paper>
         </div>

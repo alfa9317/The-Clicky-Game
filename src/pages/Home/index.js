@@ -33,7 +33,7 @@ const useStyles = makeStyles(theme => ({
         margin: '10%',
         padding: '20%',
         marginTop: '0%',
-        background: theme.palette.common.blue,
+        background: '#ebecf1',
         height: '70%',
         display: 'flex',
         flexFlow: 'row wrap',
@@ -79,16 +79,28 @@ export default function Home(){
                 <img alt="rick and morty logo" src={logo} className={classes.logo}/>
             </Tada>
             <div className={classes.gameContainer}>
-                {score}
-                {charactersList.map(character => (
-                    <Character
-                    handleClick={handleClick}
-                    id={character.id}
-                    key={character.id}  
-                    name={character.name}
-                    image={character.image}
-                    /> 
-                ))}
+            <Grid container justify='center' spacing={1}>
+
+                <Grid item >
+                    {`Score: ${score}`}
+                </Grid>
+                <Grid item>
+                    <Grid container direction='row' justify="center" alignItems="center"spacing={1}>
+                        {charactersList.map(character => (
+                            <Grid item >
+                                <Character
+                                handleClick={handleClick}
+                                id={character.id}
+                                key={character.id}  
+                                name={character.name}
+                                image={character.image}
+                                /> 
+                            </Grid>
+                        ))}
+                    </Grid>
+                </Grid>
+            </Grid>
+    
             </div>    
         </React.Fragment>
         
