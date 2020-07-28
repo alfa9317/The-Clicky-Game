@@ -49,11 +49,11 @@ const useStyles = makeStyles(theme => ({
         }
     },
     messageText:{
-        ...theme.typography.tab,
+        ...theme.typography.text,
         textAlign: 'left',
         marginTop: '20px',
         marginBottom: '20px',
-        fontSize: '1.3rem',
+        fontSize: '1.5rem',
         [theme.breakpoints.down('sm')]:{
             marginTop: '0px',
             marginBottom: '5px',
@@ -61,10 +61,10 @@ const useStyles = makeStyles(theme => ({
         }
     },
     statusTextContainer:{
-        ...theme.typography.tab,
+        ...theme.typography.score,
         fontSize: '1rem',
         textAlign: 'center',
-        marginTop: '28px',
+        marginTop: '27px',
         marginBottom: '20px',
         [theme.breakpoints.down('sm')]:{
             textAlign: 'left',
@@ -88,12 +88,14 @@ export default function Home(){
     const [flag, setFlag] = useState(0);
     const [inCharacters, setInCharacters] = useState(characters);
     const [charactersList, setCharactersList] = useState(characters);
+    const [color, setColor] = useState('black')
     
 
     const handleClick = id => {
         var outCharacters = inCharacters.filter(character => character.id !== id);
         if(outCharacters.length===inCharacters.length){
             setMessage("Opps! Try again");
+            setColor('red');
             outCharacters=charactersList;
             var highScoreUpdate = highScore<score ? score : highScore;
             if(flag===0){
@@ -113,6 +115,7 @@ export default function Home(){
             setHighScore(charactersList.length);
         }else{
             setMessage("Nice! You can do it");
+            setColor('black');
             setCharactersList(shuffle(charactersList));
             setInCharacters(outCharacters);
             setScore(score+1);
@@ -138,10 +141,10 @@ export default function Home(){
                 </Tada>
                 <div className={classes.gameContainer}>
                     <Grid container justify='center' spacing={1}>
-                        <Grid item xs={12} sm={12} md={6} lg={7}className={classes.messageText}>
+                        <Grid item xs={12} sm={12} md={6} lg={7}className={classes.messageText} style={{color:color}}>
                             {`${message}`}
                         </Grid>
-                        <Grid container xs={12} sm={12} md={3} lg={2} className={classes.statusTextContainer}>
+                        <Grid container xs={12} sm={12} md={4} lg={3} className={classes.statusTextContainer}>
                             <Grid item className={classes.score}>
                                 {`Score: ${score}`}
                             </Grid>

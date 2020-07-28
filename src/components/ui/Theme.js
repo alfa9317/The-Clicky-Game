@@ -22,6 +22,17 @@ export default createMuiTheme({
             textTransform: 'none',
             fontWeight: 700,
             fontSize: '1.3rem'
+        },
+        score: {
+            fontFamily: 'Orbitron',
+            textTransform: 'none',
+            fontWeight: 700,
+            fontSize: '1.3rem'
+        },
+        text: {
+            fontFamily: 'Bungee Inline',
+            textTransform: 'none',
+            fontWeight: 300
         }
     }
 });
