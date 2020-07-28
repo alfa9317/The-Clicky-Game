@@ -21,6 +21,13 @@ const useStyles = makeStyles(theme => ({
                 width: theme.spacing(12),
                 height: theme.spacing(12)
               }
+        },
+        [theme.breakpoints.down('xs')]:{
+            '& > *': {
+                margin: '5px',
+                width: theme.spacing(10),
+                height: theme.spacing(10)
+              }
         }
       },
       image:{
