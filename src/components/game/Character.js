@@ -12,8 +12,10 @@ const useStyles = makeStyles(theme => ({
           width: theme.spacing(20),
           height: theme.spacing(20)
         },
-        '&:hover':{
-            transform: 'scale(1.1)'
+        [theme.breakpoints.up('sm')]:{
+            '&:hover':{
+                transform: 'scale(1.1)'
+            }
         },
         [theme.breakpoints.down('sm')]:{
             '& > *': {
@@ -27,10 +29,7 @@ const useStyles = makeStyles(theme => ({
                 margin: '5px',
                 width: theme.spacing(10),
                 height: theme.spacing(10)
-              },
-              '&:hover':{
-                transform: 'scale(0)'
-            }
+              }
         }
       },
       image:{

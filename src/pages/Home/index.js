@@ -21,8 +21,9 @@ const useStyles = makeStyles(theme => ({
         display: 'block',
         margin: '0 auto',
         marginTop: '60px',
-        marginBottom: '30px',
+        marginBottom: '25px',
         [theme.breakpoints.down('sm')]:{
+            marginBottom: '10px',
             width: '15rem'
         },
         [theme.breakpoints.down('xs')]:{
@@ -48,12 +49,11 @@ const useStyles = makeStyles(theme => ({
     },
     messageText:{
         ...theme.typography.tab,
-        textAlign: 'center',
+        textAlign: 'left',
         marginTop: '20px',
         marginBottom: '20px',
         fontSize: '1.3rem',
-        [theme.breakpoints.down('xs')]:{
-            textAlign: 'left',
+        [theme.breakpoints.down('sm')]:{
             marginTop: '0px',
             marginBottom: '5px',
             marginLeft: '25px'
@@ -65,7 +65,7 @@ const useStyles = makeStyles(theme => ({
         textAlign: 'center',
         marginTop: '28px',
         marginBottom: '20px',
-        [theme.breakpoints.down('xs')]:{
+        [theme.breakpoints.down('sm')]:{
             textAlign: 'left',
             marginTop: '2px',
             marginBottom: '20px',
@@ -111,10 +111,10 @@ export default function Home(){
             </Tada>
             <div className={classes.gameContainer}>
                 <Grid container justify='center' spacing={1}>
-                    <Grid item xs={12} sm={6} md={6} lg={7}className={classes.messageText}>
+                    <Grid item xs={12} sm={12} md={6} lg={7}className={classes.messageText}>
                         {`${message}`}
                     </Grid>
-                    <Grid container xs={12} sm={4} md={3} lg={2} className={classes.statusTextContainer}>
+                    <Grid container xs={12} sm={12} md={3} lg={2} className={classes.statusTextContainer}>
                         <Grid item className={classes.score}>
                             {`Score: ${score}`}
                         </Grid>
