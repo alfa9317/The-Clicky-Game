@@ -90,8 +90,33 @@ export default function Home(){
     
 
     const handleClick = id => {
-        setCharactersList(shuffle(charactersList));
-        setScore(score+1);
+        var outCharacters = inCharacters.filter(character => character.id !== id);
+        if(outCharacters.length===inCharacters.length){
+            setMessage("Opps! Try again");
+            outCharacters=charactersList;
+            var highScoreUpdate = highScore<score ? score : highScore;
+            if(flag===0){
+                setFlag(1);
+            }else{
+                setFlag(0);
+            }
+            setCharactersList(shuffle(charactersList));
+            setInCharacters(outCharacters);
+            setScore(0);
+            setHighScore(highScoreUpdate)
+        }else if(outCharacters<=0){
+            setMessage("Great Job! Play again");
+            setCharactersList(shuffle(charactersList));
+            setInCharacters(charactersList);
+            setScore(0);
+            setHighScore(charactersList.length);
+        }else{
+            setMessage("Nice! You can do it");
+            setCharactersList(shuffle(charactersList));
+            setInCharacters(outCharacters);
+            setScore(score+1);
+        }
+        
         console.log(id);
     }
 
