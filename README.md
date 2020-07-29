@@ -2,8 +2,6 @@
 
 # Clicky Game - Rick and Morty
 
-<img src="./readMeImages/gameTheme.png" alt="drawing" width="200" />
-
 Rick and Morty Clicky Game is a virtual memory game created with ReactJS, MaterialUI and NodeJS
 
 ## How to install and run
@@ -25,7 +23,7 @@ In order to use the program, you will need to follow this steps:
 You can also just go to this url and start playing:
       https://alfa9317.github.io/the-clicky-game/
 
-![alt text](./readMeImages/clickygame.png)
+<img src="./readMeImages/gameTheme.298bb8bb.png" alt="drawing" width="200" />
 
 Required technologies:
 NodeJS,
