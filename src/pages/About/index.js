@@ -29,7 +29,13 @@ const useStyles = makeStyles( theme =>({
         }
     },
     image: {
-        width: '35rem'
+        width: '35rem',
+        [theme.breakpoints.down('sm')]:{
+            width: '25rem'
+        },
+        [theme.breakpoints.down('xs')]:{
+            width: '20rem'
+        }
     },
     pad: {
         height: '600px'
