@@ -1,12 +1,11 @@
 import React, {useState, useEffect} from "react";
 import {makeStyles} from '@material-ui/styles';
-import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import Tada from 'react-reveal/Tada';
 import Jello from 'react-reveal/Jello';
 import Character from '../../components/game/Character';
 
-import logo from "../../assets/rick-and-morty-logo.png"
+import logo from "../../assets/rick-and-morty-logo2.png"
 import characters from "../../characters.json"
 
 function shuffle(array) {
@@ -18,17 +17,18 @@ function shuffle(array) {
 
 const useStyles = makeStyles(theme => ({
     logo: {
-        width: '20rem',
+        width: '24rem',
         display: 'block',
         margin: '0 auto',
         marginTop: '60px',
         marginBottom: '25px',
         [theme.breakpoints.down('sm')]:{
-            marginBottom: '10px',
-            width: '15rem'
+            marginTop: '30px',
+            marginBottom: '20px',
+            width: '21rem'
         },
         [theme.breakpoints.down('xs')]:{
-            width: '12rem'
+            width: '18rem'
         }
     },
     gameContainer:{
