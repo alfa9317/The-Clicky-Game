@@ -23,7 +23,7 @@ In order to use the program, you will need to follow this steps:
 You can also just go to this url and start playing:
       https://alfa9317.github.io/the-clicky-game/
 
-<img src="./readMeImages/gameTheme.298bb8bb.png" alt="drawing" width="200" />
+<img src="./static/media/gameTheme.298bb8bb.png" alt="drawing" width="200" />
 
 Required technologies:
 NodeJS,
