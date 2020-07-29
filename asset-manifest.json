@@ -1,24 +1,25 @@
 {
   "files": {
     "main.css": "/the-clicky-game/static/css/main.050523cc.chunk.css",
-    "main.js": "/the-clicky-game/static/js/main.61ca66dc.chunk.js",
-    "main.js.map": "/the-clicky-game/static/js/main.61ca66dc.chunk.js.map",
+    "main.js": "/the-clicky-game/static/js/main.d7274873.chunk.js",
+    "main.js.map": "/the-clicky-game/static/js/main.d7274873.chunk.js.map",
     "runtime-main.js": "/the-clicky-game/static/js/runtime-main.3736af4a.js",
     "runtime-main.js.map": "/the-clicky-game/static/js/runtime-main.3736af4a.js.map",
-    "static/js/2.74a12909.chunk.js": "/the-clicky-game/static/js/2.74a12909.chunk.js",
-    "static/js/2.74a12909.chunk.js.map": "/the-clicky-game/static/js/2.74a12909.chunk.js.map",
+    "static/js/2.82b86cfe.chunk.js": "/the-clicky-game/static/js/2.82b86cfe.chunk.js",
+    "static/js/2.82b86cfe.chunk.js.map": "/the-clicky-game/static/js/2.82b86cfe.chunk.js.map",
     "index.html": "/the-clicky-game/index.html",
-    "precache-manifest.964e4552e000a9837ce7e276ef75ac04.js": "/the-clicky-game/precache-manifest.964e4552e000a9837ce7e276ef75ac04.js",
+    "precache-manifest.b135ce70c1f707af416a391ab0ce284b.js": "/the-clicky-game/precache-manifest.b135ce70c1f707af416a391ab0ce284b.js",
     "service-worker.js": "/the-clicky-game/service-worker.js",
     "static/css/main.050523cc.chunk.css.map": "/the-clicky-game/static/css/main.050523cc.chunk.css.map",
-    "static/js/2.74a12909.chunk.js.LICENSE.txt": "/the-clicky-game/static/js/2.74a12909.chunk.js.LICENSE.txt",
+    "static/js/2.82b86cfe.chunk.js.LICENSE.txt": "/the-clicky-game/static/js/2.82b86cfe.chunk.js.LICENSE.txt",
+    "static/media/gameTheme.png": "/the-clicky-game/static/media/gameTheme.298bb8bb.png",
     "static/media/logo2CG.png": "/the-clicky-game/static/media/logo2CG.401501ca.png",
-    "static/media/rick-and-morty-logo.png": "/the-clicky-game/static/media/rick-and-morty-logo.07a38000.png"
+    "static/media/rick-and-morty-logo2.png": "/the-clicky-game/static/media/rick-and-morty-logo2.32794961.png"
   },
   "entrypoints": [
     "static/js/runtime-main.3736af4a.js",
-    "static/js/2.74a12909.chunk.js",
+    "static/js/2.82b86cfe.chunk.js",
     "static/css/main.050523cc.chunk.css",
-    "static/js/main.61ca66dc.chunk.js"
+    "static/js/main.d7274873.chunk.js"
   ]
 }
