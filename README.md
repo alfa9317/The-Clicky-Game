@@ -1,4 +1,4 @@
-<img src="./readMeImages/rick-and-morty-logo2.png" alt="drawing" width="600"/>
+<img src="./static/media/rick-and-morty-logo2.32794961.png" alt="drawing" width="400"/>
 
 # Clicky Game - Rick and Morty
 
